@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Image Processor Implementation</h1>
+    <p class="lead">Demo of ImageProcessor (Image Cropper for Umbraco) in action for localised and remote sources</p>
+</div>
+
+<hr/>
+
+<h2>Localised Demo</h2>
+<p>This demo is to show imageprocessor in use for a resource that is localised</p>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h4>The Original Image</h4>
+        <img src="~/Images/eagle.jpg" alt="original" />
+    </div>
+    <div class="col-lg-6">
+        <h4>The Cropped Image</h4>
+        <img src="~/Images/eagle.jpg?preset=demo" alt="cropped" />
+    </div>
+</div>
+
+<h2>Remote Demo</h2>
+<p>This demo is to show imageprocessor in use for a resource that is remote</p>
+
+<div class="row">
+    <div class="col-lg-6">
+        <h4>The Original Image</h4>
+        <img src="http://cdn.mryful.com/Jennifer-Lawrence.jpg" alt="original" />
+    </div>
+    <div class="col-lg-6">
+        <h4>The Cropped Image</h4>
+        <img src="/remote.axd?http://cdn.mryful.com/Jennifer-Lawrence.jpg?preset=demo" alt="cropped" />
+    </div>
+</div>
+
+
+
